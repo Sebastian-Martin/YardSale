@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet" />
+    <title>Document</title>
+    <style>
+        :root {
+        --white: #ffffff;
+        --black: #000000;
+        --very-light-pink: #c7c7c7;
+        --text-input-field: #f7f7f7;
+        --hospital-green: #acd9b2;
+        --sm: 1.4rem;
+        --md: 1.6rem;
+        --lg: 1.8rem;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+        font-family: 'Quicksand', sans-serif;
+      }
+
+      .main-container {
+        display: flex;
+        place-items: center;
+        width: 100%;
+        height: 100vh;
+      }
+      .my-orders {
+        width: 280px;
+        margin: 0 auto;
+      }
+      .title {
+        font-size: var(--lg);
+        margin-bottom: 32px;
+      }
+      .my-orders__order {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 56px;
+        margin-bottom: 12px;
+      }
+      .my-orders__order p:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+      }
+      .my-orders__order p:nth-child(2) {
+        flex-grow: 1;
+        margin-right: 12px;
+        text-align: end;
+        font-size: var(--md);
+        font-weight: bold;
+      }
+      .my-orders__order p span:nth-child(1) {
+        font-size: var(--md);
+        font-weight: bold;
+      }
+      .my-orders__order p span:nth-child(2) {
+        font-size: var(--sm);
+        color: var(--very-light-pink);
+      }
+    </style>
+</head>
+<body>
+  <main class="main-container">
+    <section class="my-orders">
+      <h1 class="title">My orders</h1>
+      <div class="my-orders__order">
+        <p>
+          <span>09.09.2022</span>
+          <span>6 articles</span>
+        </p>
+        <p>$ 560.00</p>
+        <img src="./icons/flechita.svg" alt="arrow">
+      </div>
+      <div class="my-orders__order">
+        <p>
+          <span>09.09.2022</span>
+          <span>6 articles</span>
+        </p>
+        <p>$ 560.00</p>
+        <img src="./icons/flechita.svg" alt="arrow">
+      </div>
+      <div class="my-orders__order">
+        <p>
+          <span>09.09.2022</span>
+          <span>6 articles</span>
+        </p>
+        <p>$ 560.00</p>
+        <img src="./icons/flechita.svg" alt="arrow">
+      </div>
+      <div class="my-orders__order">
+        <p>
+          <span>09.09.2022</span>
+          <span>6 articles</span>
+        </p>
+        <p>$ 560.00</p>
+        <img src="./icons/flechita.svg" alt="arrow">
+      </div>
+    </section>
+    
+  </main>
+</body>
+</html>

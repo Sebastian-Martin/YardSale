@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      :root {
+        --white: #ffffff;
+        --black: #000000;
+        --very-light-pink: #c7c7c7;
+        --text-input-field: #f7f7f7;
+        --hospital-green: #acd9b2;
+        --sm: 1.4rem;
+        --md: 1.6rem;
+        --lg: 1.8rem;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        font-size: 62.5%;
+        font-family: "Quicksand", sans-serif;
+      }
+
+      .product-detail {
+         position: relative;
+         width: 100%;
+         padding-bottom: 16px;
+         margin: 0 auto;
+      }
+      .product-detail__close {
+         position: absolute;
+         width: 24px;
+         height: 24px;
+         padding: 5px;
+         top: 8px;
+         right: 8px;
+         background-color: var(--white);
+         border-radius: 50%;
+         cursor: pointer;
+      }
+      .product-detail > img {
+         width: 100%;
+         height: 320px;
+         border-radius: 0 0 20px 20px;
+         object-fit: cover;
+      }
+      .dots {
+         text-align: center;
+      }
+      .dots .dot {
+         display: inline-block;
+         width: 8px;
+         height: 8px;
+         margin: 0 2px;
+         cursor: pointer;
+         border-radius: 50%;
+         background-color: var(--very-light-pink);
+      }
+      .dots span:nth-child(1) {
+         background-color: var(--hospital-green);
+      }
+      .product-detail__info {
+         margin: 0 24px;
+      }
+      .product-detail__info p:nth-child(1) {
+         margin-top: 18px;
+         margin-bottom: 4px;
+         font-size: var(--md);
+         font-weight: bold;
+      }
+      .product-detail__info p:nth-child(2) {
+         margin-bottom: 20px;
+         font-size: var(--md);
+         color: var(--very-light-pink);
+      }
+      .product-detail__info p:nth-child(3) {
+         margin-bottom: 24px;
+         font-size: var(--sm);
+         color: var(--very-light-pink);
+      }
+      .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 4.8rem;
+        font-family: "Quicksand", sans-serif;
+        font-size: var(--md);
+        font-weight: bold;
+        cursor: pointer;
+        border-radius: 8px;
+      }
+      .primary-button {
+        border: none;
+        color: var(--white);
+        background-color: var(--hospital-green);
+      }
+      @media (min-width: 640px) {
+         .product-detail {
+            position: absolute;
+            width: 360px;
+            right: 0;
+         }
+      }
+    </style>
+  </head>
+  <body>
+    <aside class="product-detail">
+      <div class="product-detail__close">
+         <img src="./icons/icon_close.png" alt="close" />
+      </div>
+      <img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike" />
+      <div class="dots">
+         <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      </div>
+      <div class="product-detail__info">
+        <p>$ 35,00</p>
+        <p>Bike</p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id,
+          repellendus rem veniam pariatur quae quia neque voluptates omnis
+          atque, quaerat, esse quidem eum a officiis iure autem accusamus
+          dolores molestiae.
+        </p>
+        <button class="button primary-button">
+         <img src="./icons/bt_add_to_cart.svg" alt="add to cart" />
+         Add to cart
+        </button>
+      </div>
+    </aside>
+  </body>
+</html>
